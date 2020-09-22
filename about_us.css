@@ -22,23 +22,10 @@ body{
 }
 .wrapper{
   display: grid;
+  place-items:center;
   margin: 50px auto 50px auto;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-.about_us_section{
-  
-}
-.about_us_section .head_content_about{
-  width: 100%;
-  display: grid;
-  place-items:center;
-}
-.about_us_section .head_content_about h1{
-  text-align: center;
-  font-size: 50px;
-  padding-top: 80px; 
-
 }
 .wrapper .box{
   width: 400px;
@@ -161,16 +148,18 @@ body{
 .down p{
   color: black;
 }
-/* @media (max-width: 700px) {
-  .wrapper{
-    margin: 200px auto;
-  }
- .wrapper .box{
-    margin: 0;
-  }
-} */
+@media (max-width: 700px) {
+
+}
 @media (max-width: 490px){
-    .wrapper .box{
-      width: 270px;
+      .wrapper{
+      display: grid;
+      place-items:center;
+      margin: 50px auto 50px auto;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+   .wrapper .box{
+      width: 275px;
     }
 }
