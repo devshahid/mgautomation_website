@@ -1,0 +1,178 @@
+/*background: linear-gradient(90deg, #423f9c 31%, #862359 69%);
+ background: linear-gradient(90deg, #00e4ce 31%, #00abc9 69%);
+
+ bacground:#00BCD4
+ #643094
+
+  background: linear-gradient(90deg, #00e4ce 31%, #00abc9 69%);*/
+
+  
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /*background: #ae48e8;*/
+}
+.wrapper{
+  display: grid;
+  margin: 50px auto 50px auto;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.about_us_section{
+  
+}
+.about_us_section .head_content_about{
+  width: 100%;
+  display: grid;
+  place-items:center;
+}
+.about_us_section .head_content_about h1{
+  text-align: center;
+  font-size: 50px;
+  padding-top: 80px; 
+
+}
+.wrapper .box{
+  width: 400px;
+  margin: 0px auto 20px auto;
+  position: relative;
+  perspective: 1000px;
+}
+.counter_score{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('images/pandanew.jpeg');
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  padding-top: 60px;
+}
+
+.card {
+  width: 20%;
+  background: rgba(255,255,255,0.9);
+  /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+  border-radius: 10px;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  /*background: linear-gradient(to right, #ff416c, #ff4b2b);*/
+}
+.card-header h1, .card-header h3, .card-header span{
+    color: black;
+}
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+.wrapper .box .front-face{
+  background: #fff;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .front-face .icon img,
+.box .front-face span{
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 300px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+
+.down p{
+  color: black;
+}
+@media (max-width: 700px) {
+  .wrapper{
+    margin: 200px auto;
+  }
+  .about_us_section .head_content_about h1{
+      
+      font-size: 30px;
+      width: 50%;
+  }
+}
+@media (max-width: 420px){
+    .wrapper .box{
+      width: 270px;
+    }
+}
