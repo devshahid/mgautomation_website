@@ -165,10 +165,8 @@ body{
   .wrapper{
     margin: 200px auto;
   }
-  .about_us_section .head_content_about h1{
-      
-      font-size: 30px;
-      width: 50%;
+ .wrapper .box{
+    margin: 0;
   }
 }
 @media (max-width: 420px){
