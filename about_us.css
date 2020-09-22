@@ -170,6 +170,9 @@ body{
   }
 }
 @media (max-width: 420px){
+  .wrapper{
+    margin: 200px auto;
+  }
     .wrapper .box{
       width: 270px;
     }
