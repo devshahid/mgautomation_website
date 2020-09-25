@@ -78,6 +78,9 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
+		<!-- scroll top button starts -->
+	<button class="top_scroll"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></button>
+		<!-- scroll top button ends -->
 	<section>
 		<div class="about_us_section">
 			<!-- <div class="head_content_about">
@@ -225,7 +228,7 @@
 
 					      <div class="team_card">
 						        <div class="team_card_header">
-						        	<img src="images/profile/mayank.jpg">
+						        	<img src="images/profile/Mayank.jpg">
 						        </div>
 						        <h1>Mayank Sonkar</h1>
 								<h3>Hardware and Support Engineer</h3>
@@ -360,11 +363,25 @@
 	<script src="jquery/waypoint.js"></script>
 	<script>
 		$(document).ready(function(){
+
+			$(window).scroll(function() {
+				if($(this).scrollTop() > 40){
+					$('.top_scroll').fadeIn();
+				}
+				else{
+					$('.top_scroll').fadeOut();	
+				}
+			});
+
 			$("#wrapper").click( function() {
 				$(".icon").toggleClass("close");
 				$("nav ul").toggleClass("show_nav");
+				$(".top_scroll").toggleClass("hide_top_button");
+				
 			});
-
+			$('.top_scroll').click(function(){
+				$('html,body').animate({scrollTop:0},1500);
+			});
 			$('.customer-logos').slick({
               slidesToShow: 6,
               slidesToScroll: 1,
