@@ -14,11 +14,11 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+/* body{
   height: 100vh;
   width: 100%;
   /*background: #ae48e8;*/
-}
+/* } */ 
 
 .wrapper{
   text-align: center;
