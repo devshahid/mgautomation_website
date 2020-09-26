@@ -157,9 +157,14 @@ body{
 }
 .team .team_heading{
   margin-top: 80px;
-  color:black;
+  color:#000;
   font-size: 48px;
   font-weight: bold;
+}
+@media (max-width: 600px){
+  .team .team_heading{
+    font-size: 32px;
+  }
 }
 .team_row {
   display: flex;
@@ -383,8 +388,6 @@ body{
 }
 
 
-@media (max-width: 490px){
-}
 
 footer{
   position: relative;
