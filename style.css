@@ -344,13 +344,13 @@ header nav ul li a
 		height: 100vh;
 		top: 5rem;
 		left: -100%;
-		transition: 0.5s all;
-		/*background: rgba(17,23,56,1);*/
+		transition: all 0.5s ease;
 		background: linear-gradient(90deg, #423f9c 31%, #862359 69%);
 		display: block;
 		text-align: center;
 	}
 	.show_nav{
+		transition: 0.5s ease;
 		left: 0%;
 	}
 	header nav ul li{
