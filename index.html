@@ -5,25 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>MG Automation</title>
-	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="about_us.css">
 	<link rel="stylesheet" type="text/css" href="slick.css">
-
+	<link rel="stylesheet" type="text/css" href="image.css">
 	<script type="text/javascript" src="jquery/jquery.js"></script>
 </head>
 <body>
-	<header>
+	<header class="btn_container" id="home_btn">
 		<video autoplay loop muted class="video_bg">
 			<source src="images/flyash3.mp4" type="video/mp4">
 		</video>
 		<nav>
 			<img class="logo" src="images/logo2.png">
 			<ul class="top_nav">
-				<li><a class="active" href="#">Home</a></li>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Products</a></li>
-				<li><a href="#">Solutions</a></li>
-				<li><a href="#">Contact us</a></li>
+				<li><a class="active" href="#home_btn">Home</a></li>
+				<li><a href="#about_btn" id="about_id">About us</a></li>
+				<li><a href="#product_btn">Products</a></li>
+				<!-- <li><a href="#solution_btn">Solutions</a></li> -->
+				<li><a href="#contact_btn">Contact us</a></li>
 			</ul>
 			<div id="wrapper">
 		<div class="circle icon">
@@ -36,51 +36,21 @@
 		<div class="head_content">
 				<h1>Welcome to MG Automation</h1>
 				<h3>|<span></span></h3>
-				<button>Explore More</button>
+				<button class="start">Explore More</button>
 		</div>
 	</header>
 	<div class="description">
 
 		<div class="content">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<!-- <p>Established in the year 2017, MG Automation has made a well-recognized name as a Service Provider of Electrical Panel Maintenance Service, DC Drives Services, Robotic Arm System and much more. We have achieved expertise in catering to the requirements of our clients exactly as per their specifications. We emphasize on stringent quality standards in order to ensure that the products provided to our clients are always optimum to its level. To suit the needs of our valued clients we are offering these services as per their precise requirements.</p> -->
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
 		<!-- scroll top button starts -->
-	<button class="top_scroll"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></button>
+	<button class="top_scroll"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 		<!-- scroll top button ends -->
+
+	<section  class="btn_container" id="about_btn" style="height: 12vh;"></section>
 	<section>
 		<div class="about_us_section">
 			<!-- <div class="head_content_about">
@@ -205,17 +175,9 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section class="down">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</section> -->
 	<section class="team">
 		<div class="team_category">
-            <span class="team_heading">Our Team</span> 
+            <h1 class="team_heading">Our Team of Experts</h1> 
            		<div class="main_team">
 	           		<div class="team_row">
 					      <div class="team_card">
@@ -354,23 +316,411 @@
 				      </div>
 				</div>
 		</div>
-
 	</section>
 
+	<section class="gallery">
+		
+	</section>
+
+	<section class="mision_vision">
+
+
+		<div class="mv_row">
+				      
+				      <div class="mv_card">
+					        <div class="mv_card_header">
+					        		<img src="images/mission.png" style="width: 80px;">
+					        		<h1>Our Mission</h1>
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip
+					        	ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+					        </div>
+				      </div>
+				      <div class="mv_card">
+				        <div class="mv_card_header">
+					        	<img src="images/vision.png" style="width: 80px;">
+					        	<h1>Our Mission</h1>
+					        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip
+					        	ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nonproident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+					        </div>
+				      </div>
+				</div>
+			</div>
+		
+	</section>
+
+	<section  class="btn_container" id="product_btn" style="height: 12vh;"></section>
+
+	<section class="product_box">
+		<div class="product_heading">
+			<h1>Our Products</h1>
+			<div class="row_work">
+		      <div class="card_work_product">
+				<img id="expandedImg1" class="big_img" src="images/product/flyashbrick.jpg">
+				<!-- Image text -->
+				<div id="imgtext"></div>
+				<div class="rownew">
+				  <div class="column2">
+				    <img src="images/product/sensor.jpg" id="1">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/donapattal.jpg" id="1">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/xtable.jpg" id="1">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/plc.jpg" id="1">
+				  </div>
+				</div>
+
+		      </div>
+
+		      <div class="card_work_product">
+				<img id="expandedImg2" class="big_img" src="images/product/plc.jpg">
+				<!-- Image text -->
+				<div id="imgtext"></div>
+				<div class="rownew">
+				  <div class="column2">
+				    <img src="images/product/xtable.jpg" id="2">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/hmi.jpg" id="2">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/xytable.jpg" id="2">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/flyashbrick.jpg" id="2">
+				  </div>
+				</div>
+
+		      </div>
+
+		      <div class="card_work_product">
+				<img id="expandedImg3" class="big_img" src="images/product/hmi.jpg">
+				<!-- Image text -->
+				<div id="imgtext"></div>
+				<div class="rownew">
+				  <div class="column2">
+				    <img src="images/product/hmi.jpg" id="3">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/xytable.jpg" id="3">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/flyashbrick.jpg" id="3">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/xtable.jpg" id="3">
+				  </div>
+				</div>
+
+		      </div>
+
+		      <div class="card_work_product">
+				<img id="expandedImg4" class="big_img" src="images/product/xtable.jpg">
+				<!-- Image text -->
+				<div id="imgtext"></div>
+				<div class="rownew">
+				  <div class="column2">
+				    <img src="images/product/plc.jpg" id="4">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/hmi.jpg" id="4">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/xytable.jpg" id="4">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/donapattal.jpg" id="4">
+				  </div>
+				</div>
+
+		      </div>
+
+		      <div class="card_work_product">
+				<img id="expandedImg5" class="big_img" src="images/product/xytable.jpg">
+				<!-- Image text -->
+				<div id="imgtext"></div>
+				<div class="rownew">
+				  <div class="column2">
+				    <img src="images/product/xtable.jpg" id="5">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/flyashbrick.jpg" id="5">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/plc.jpg" id="5">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/hmi.jpg" id="5">
+				  </div>
+				</div>
+
+		      </div>
+
+		      <div class="card_work_product">
+				<img id="expandedImg6" class="big_img" src="images/product/donapattal.jpg">
+				<!-- Image text -->
+				<div id="imgtext"></div>
+				<div class="rownew">
+				  <div class="column2">
+				    <img src="images/product/xytable.jpg" id="6">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/xtable.jpg" id="6">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/flyashbrick.jpg" id="6">
+				  </div>
+				  <div class="column2">
+				    <img src="images/product/hmi.jpg" id="6">
+				  </div>
+				</div>
+
+		      </div>
+
+			</div>
+		</div>
+	</section>
+
+	<section  class="btn_container" id="solution_btn" style="height: 12vh;"></section>
+	<!-- <section style="height: 100vh; background: blue;">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</section> -->
+
+	<!-- contact us starts here -->
+
+	<section  class="btn_container" id="contact_btn" style="height: 12vh;"></section>
+
+	<section class="google_map">
+		<h1>You can find us by the help of this map</h1>
+		<div class="google_map">
+		<div class="google_map_mid">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.426573547106!2d81.6282482148873!3d21.254575785876465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28ddd7e5c6aab5%3A0x322c322a6d048a28!2sM%20G%20Automation!5e0!3m2!1sen!2sin!4v1601110903957!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+				
+			</iframe>
+		</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="contact_us" style="background: black;">
+		<div class="contact_content">
+			<h1>Contact us</h1>
+		</div>
+		<div class="contact_container">
+			<div class="contact_info">
+				<div class="contact_box">
+					<div class="contact_icon"><i class="fa fa-map-marker map" arial-hidden="true"></i></div>
+					<div class="contact_text">
+						<h1>Address</h1>
+						<p>Office No. 130/123/124, 1st Floor Arihant Complex, Raipur(C.G.)</p>
+					</div>
+				</div>
+
+				<div class="contact_box">
+					<div class="contact_icon"><i class="fa fa-phone" arial-hidden="true"></i></div>
+					<div class="contact_text">
+						<h1>Phone</h1>
+						<p>9301001517,  0771-3551462</p>
+					</div>
+				</div>
+
+				<div class="contact_box">
+					<div class="contact_icon"><i class="fa fa-envelope" arial-hidden="true"></i></div>
+					<div class="contact_text">
+						<h1>Email</h1>
+						<p>info@mgautomations.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact_us_form">
+				<form>
+					<h2>Send Message</h2>
+					<div class="input_box">
+						<input type="text" placeholder="name" name="">
+						<!-- <span>Full Name</span> -->
+					</div>
+					<div class="input_box">
+						<input type="text" placeholder="Email" name="">
+						<!-- <span>Email</span> -->
+					</div>
+					<div class="input_box">
+						<textarea  placeholder="message"></textarea>
+						<!-- <span>Type your message here</span> -->
+					</div>
+					<div class="input_box">
+						<input type="submit" name="" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	
+	<!-- contact us starts here -->
+
+	<!-- footer starts here -->
+
+	<footer>
+      <div class="main-content">
+        <div class="main_content_box">
+            <div class="left box">
+              <h2>MG Automation</h2>
+              <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="center box">
+              <h2>Address</h2>
+              <div class="content">
+                  <div class="place">
+                    <span class="fa fa-map-marker map"></span>
+                    <h1><span class="text">Office No. 130/123/124, 1st Floor Arihant Complex, Raipur(C.G.)</span></h1>
+                  </div>
+              </div>
+            </div>
+
+            <div class="center box">
+              <h2>Contact</h2>
+              <div class="content">
+                  <div class="phone">
+                      <span class="fa fa-phone"></span>
+                      <span class="text">0771-3551462, 9301001517</span>
+                  </div>
+                  <div class="email">
+                      <span class="fa fa-envelope"></span>
+                      <span class="text">info@mgautomations.com</span>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="box_under_line"><h1 class="under_line"></h1></div>
+        
+        <div class="social">
+                    <a href="#"><span class="fa fa-facebook-f"></span></a>
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-instagram"></span></a>
+                    <a href="#"><span class="fa fa-youtube"></span></a>
+        </div>
+      </div>
+	</footer>
+
+	<!-- footer ends here -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 	<script src="jquery/counter_up.js"></script>
 	<script src="jquery/waypoint.js"></script>
 	<script>
+
 		$(document).ready(function(){
 
+			$('.column2 img').click(function(){
+				id = $(this).attr("id");
+				rachna = $(this).attr("src");
+				if(id==1)
+				{
+					$('#expandedImg1').attr("src", rachna);
+				}
+				else if(id==2)
+				{
+					$('#expandedImg2').attr("src", rachna);	
+				}
+				else if(id==3)
+				{
+					$('#expandedImg3').attr("src", rachna);	
+				}
+				else if(id==4)
+				{
+					$('#expandedImg4').attr("src", rachna);	
+				}
+				else if(id==5)
+				{
+					$('#expandedImg5').attr("src", rachna);	
+				}
+				else if(id==6)
+				{
+					$('#expandedImg6').attr("src", rachna);	
+				}
+				// alert(dri);
+				// $('.expandedImg');
+
+				if(shahid==1)
+				{
+					// expandImg.src = imgs.src;
+				}
+			});
+
 			$(window).scroll(function() {
-				if($(this).scrollTop() > 40){
+				if($(this).scrollTop() > 100){
 					$('.top_scroll').fadeIn();
 				}
 				else{
 					$('.top_scroll').fadeOut();	
 				}
+			});
+
+			$('.top_nav li a').click(function(event){
+				attrvalue=$(this).attr('href');	
+				attrvalueOffset = $(attrvalue).offset().top+12;
+				$('html, body').animate({scrollTop:attrvalueOffset},2000);
+				event.preventDefault();
+			});
+			$('.start').click(function () {
+				aboutvalue=$('#about_id').offset().top+750;
+				$('html, body').animate({scrollTop:aboutvalue},1000);
+			});
+			$(window).scroll(function(){
+
+				$('.btn_container').each(function(){
+					topvalue=$(this).offset().top;
+					if($(document).scrollTop() > topvalue){
+						thisofs = $(this).attr('id');
+						$('.btn_container').removeClass('active');
+						activeID = $(this).addClass('active').attr('id');
+					} 
+				});
+				$('.top_nav li').each(function(index,el){
+					thischild = $(this).children('a');
+					thischildren = $(this).children('a').attr('href');
+					if(thischildren === '#'+activeID){
+						$('.top_nav li a').removeClass('active');
+						$(thischild).addClass('active');
+					}
+				});
+
 			});
 
 			$("#wrapper").click( function() {
