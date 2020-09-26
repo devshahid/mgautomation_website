@@ -168,7 +168,7 @@ header nav ul li a
 		padding: 1.25rem;
 	}
 	header nav.sticky{
-		padding: 5px 2rem;
+		padding: 10px 2rem;
 	}
 	header nav ul li a{
 		margin:0 8px;
@@ -250,19 +250,19 @@ header nav ul li a
 		font-size: 1.35rem;
 	}
 	.top_scroll{
-	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	font-size: 28px;
-	width: 48px;
-	height: 48px;
-	background: linear-gradient( #423f9c, #862359);
-	color: white;
-	border: none;
-	cursor: pointer;
-	border-radius: 50%;
-	z-index: 99999999;
-}
+		position: fixed;
+		bottom: 40px;
+		right: 40px;
+		font-size: 28px;
+		width: 48px;
+		height: 48px;
+		background: linear-gradient( #423f9c, #862359);
+		color: white;
+		border: none;
+		cursor: pointer;
+		border-radius: 50%;
+		z-index: 99999999;
+	}
 }
 
 @media(max-width: 420px){
