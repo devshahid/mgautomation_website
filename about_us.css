@@ -19,6 +19,7 @@ body{
   width: 100%;
   /*background: #ae48e8;*/
 }
+
 .wrapper{
   text-align: center;
   display: grid;
@@ -26,6 +27,7 @@ body{
   margin: 50px auto 50px auto;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  overflow: hidden;
 }
 .wrapper .box{
   width: 400px;
@@ -364,6 +366,16 @@ body{
   }
 
 }
+@media screen and (max-width: 350px) {
+  .team_card {
+    width: 280px;
+  }
+  .team_card_header img{
+    width: 280px;
+    height: auto;
+  }
+
+}
 
 .google_map{
   width: 100%;
@@ -634,5 +646,19 @@ footer{
     }
    .wrapper .box{
       width: 275px;
+    }
+}
+
+@media (max-width: 320px){
+      .wrapper{
+      display: grid;
+      place-items:center;
+      margin: 50px auto 50px auto;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      overflow: hidden;
+    }
+   .wrapper .box{
+      width: 210px;
     }
 }
