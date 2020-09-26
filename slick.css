@@ -4,7 +4,13 @@
 .container h2{
   text-align:center;
   padding: 20px;
-  /*color: black;*/
+  color: #fff;
+  font-size: 40px;
+}
+@media (max-width: 600px){
+    .container h2{
+        font-size: 30px;
+    }
 }
 /* Slider */
 
