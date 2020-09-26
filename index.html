@@ -684,16 +684,6 @@
 	<script src="jquery/waypoint.js"></script>
 	<script>
 
-		$(document).ready(function() {
-	    	$("#ud_dots").delay(500).fadeOut(300, function() {
-	            $("#ud_bg_left").animate({ left: "-50%" }, 300);
-	            $("#ud_bg_right").animate({ right: "-50%" }, 300, function() {
-	                $("#ud_preloader").fadeOut(10);
-	            });
-	        });
-		});
-
-
 
 		$(document).ready(function(){
 
@@ -824,6 +814,17 @@
 				delay: 10,
 			    time: 1000
 			});
+
+
+			$(document).ready(function() {
+		    	$("#ud_dots").delay(500).fadeOut(300, function() {
+		            $("#ud_bg_left").animate({ left: "-50%" }, 300);
+		            $("#ud_bg_right").animate({ right: "-50%" }, 300, function() {
+		                $("#ud_preloader").fadeOut(10);
+		            });
+		        });
+			});
+
 	</script>
 </body>
 </html>
