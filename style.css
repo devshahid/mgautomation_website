@@ -6,6 +6,13 @@
 	text-decoration: none;
 	color: white;
 }
+body{
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 #ud_preloader {
     position: fixed;
     top: 0;
