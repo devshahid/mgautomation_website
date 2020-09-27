@@ -420,6 +420,7 @@ width:100%;
 	width:100%;
 }
 .main_content_box{
+	width:100%;
   display: flex;
 }
 .main_content_box .box{
