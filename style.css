@@ -7,12 +7,17 @@
 	color: white;
 }
 body{
-	width: 100vw;
-/*     height: 100%; */
+
+    width: 100%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+ /* height: 100%;
+  width: 100%;*/
+  /*background: #ae48e8;*/
 }
+
 #ud_preloader {
     position: fixed;
     top: 0;
@@ -127,6 +132,57 @@ body{
 header{
 	height: 100vh;		
 	background: rgba(0,0,0,0.7);
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/wiring1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: 5s;
+
+	animation-name: back_change;
+	animation-direction: alternate-reverse;
+	animation-duration: 30s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes back_change{
+	0%{
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/wiring2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	33%{
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/wiring3.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	66%{
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/wiring4.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	100%{
+		height: 100vh;
+		width: 100%;
+		background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/wiring1.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
 }
 .video_bg{
 	min-width: 100vw;
@@ -225,17 +281,39 @@ header nav ul li a
 	content: '';
 	animation: animate infinite 8s;
 }
+
+
+
+
+
+/*content: 'GSM mobile based remote device Control System';*/
+
+
 @keyframes animate{
 	0%{
 		content: 'Customized Solution for Industrial Automation';
-
 	}
-	50%{
-		content: 'Plc Control Panel Design';		
+	15%{
+		content: 'Flyash Brick machine PLC Control Panel';
+	}
+	30%{
+		content: 'Auto Cut Chain link Fencing Machine Control Panel';
+	}
+	45%{
+		content: 'Dona Pattal Machine Control Panel';
+	}
+	60%{
+		content: 'Customized Robotic System Design';
+	}
+	75%{
+		content: 'Stepper Motor Based Control Panel';
+	}
+	90%{
+		content: 'PLC based Control Panel with HMI';
 	}
 	100%{
-		content: 'Auto Cut Chain link automation';
-	}
+		content: 'GSM mobile based remote device Control System';
+	}	
 }
 .head_content button{
 	margin: 0.625rem 0 0 0;
@@ -266,9 +344,11 @@ header nav ul li a
 	align-items: center;
 }
 .content{
+	margin-top: 10%;
 	width: 90vw;
 }
 .content p{
+	font-size: 20px;
 	color: black;
 	text-align: justify;
 }
