@@ -426,9 +426,11 @@ footer{
 .main-content{
   color: #d9d9d9;
   display: block;
+  width: 100%;
 }
 .main_content_box{
   display: flex;
+  width: 100%;
 }
 .main_content_box .box{
   flex-basis: 50%;
