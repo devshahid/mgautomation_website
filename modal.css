@@ -1,0 +1,181 @@
+
+.modal 
+{
+  display: none;
+  position: fixed;  /*Stay in place*/ 
+  z-index: 10000; /* Sit on top */
+  padding: 30px 0; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%;  /*Full height*/ 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  transition: 0.5s ease-in-out;
+}
+/* Modal Content */
+.modal-content 
+{
+  /*background-color: #fefefe;*/
+  background: linear-gradient(to right, darkgrey, lightblue);
+  margin: auto;
+  /*padding: 20px;*/
+  border: 1px solid #888;
+  width: 90%;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  position: relative;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.modal-content .heading{
+  margin-bottom: 40px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+.modal_main_body{
+  width: 100%;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-around;
+}
+.modal_main_body .product_offer_img{
+  display: block;
+  width: 40%;
+  text-align: center;
+}
+.modal_main_body h1, p, h3,span,div{
+  color: #000;
+}
+.modal_main_body .product_offer_img img{
+  max-width: 450px;
+  min-height: 450px;
+  height: auto;width: auto;
+  /*height: auto;*/
+}
+.modal_main_body .offer_content{
+  width: 50%;
+  text-align: center;
+}
+.modal_main_body .offer_content p, .modal_main_body .offer_content h1{
+  text-align: justify;
+  letter-spacing: 0;
+}
+.offer_price_row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+}
+.offer_price_row .offer_column h3{
+  font-size: 30px;
+}
+.product_show_btn{
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, skyblue, #00BBAB);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal_main_body .offer_content .contact{
+  width: 100%;
+  text-align: left;
+}
+.modal_main_body .offer_content .contact h1{
+  text-align: center;
+}
+.modal_main_body .offer_content .contact .contact_details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal_main_body .offer_content .contact .contact_details div{
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #000;
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:focus {
+  color: black;
+}
+
+@media(max-width: 920px){
+  .modal-content {
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+  }
+  .modal_main_body{
+    width: 100%;
+    display: block;
+  }
+  .modal_main_body .product_offer_img{
+    display: block;
+    width: 100%;
+  }
+  .modal_main_body .product_offer_img img{
+    max-width: 350px;
+    min-height: 350px;
+  }
+  .modal_main_body .offer_content{
+    width: 100%;
+  }
+}
+@media(max-width: 420px){
+  .modal-content .heading{
+    font-size: 28px;
+  }
+  .offer_price_row{
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+  }
+  .offer_price_row .offer_column{
+    text-align: center;
+  }
+  .offer_price_row .offer_column h3, .offer_price_row .offer_column h1 {
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+  }
+  .modal_main_body h1{
+    font-size: 20px;
+  }
+  .modal_main_body .offer_content{
+    margin-top: 20px;
+  }
+  .modal_main_body .offer_content .contact h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .modal_main_body .offer_content .contact .contact_details{
+    display: block;
+    width: 100%;
+  }
+  .modal_main_body .offer_content .contact .contact_details div{
+    font-size: 14px;
+    padding: 8px;
+  }
+  .modal_main_body .product_offer_img img{
+    max-width: 280px;
+    min-height: 280px;
+  }
+  .modal_main_body .offer_content{
+    width: 100%;
+  }
+}

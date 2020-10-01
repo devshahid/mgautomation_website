@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="modal.css">
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+</head>
+<body>
+	<section style="height: 200vh;"></section>
+	<button id="myBtn" style="display: none;">Add</button>
+		<!-- modal box start -->
+			<div id="myModal" class="modal">
+  				<!-- Modal content -->
+					<div class="modal-content">
+				  	<h1 class="heading">Offer </h1>
+				    <span class="close">&times;</span>
+
+				    <div class="modal_main_body">
+				    	<div class="product_offer_img">
+				    		<img src="images/product/flyashbrick.jpg">
+				    		<h1>Flyash Brick Panel</h1>
+				    	</div>
+				    	<div class="offer_content">
+				    		<h1>Description</h1>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				    		<div class="offer_price_row">
+				    			<div class="offer_column">
+				    				<h3>Actual Price</h3>
+				    				<h1>100000<span>/-</span></h1>
+				    			</div>
+				    			<div class="offer_column">
+				    				<h3>Offer Price</h3>
+				    				<h1>100000<span>/-</span></h1>
+				    			</div>
+				    		</div>
+				    		<button class="product_show_btn">Go check Out</button>
+				    		<div class="contact">
+				    			<h1>Contact Us</h1>
+				    			<div class="contact_details">
+					    			<div class="phone">9301001517, 0771-042468</div>
+					    			<div class="email">info@mgautomations.com</div>
+					    		</div>
+				    		</div>
+				    	</div>
+				    </div>	
+
+
+
+				  	</div>
+			</div>
+			<!-- modal box end -->
+			<script src="jquery/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			setTimeout(openWindow,2000);
+			$('.close').click(function(){
+				$('.modal').hide();
+				$('html body').css("overflow", "scroll");	
+			});
+		});
+		function openWindow(){
+			$('.modal').show();
+			$('html body').css("overflow", "hidden");
+		}
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+	</script>
+
+</body>
+</html>
