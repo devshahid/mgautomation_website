@@ -651,13 +651,16 @@ footer{
   footer{
     position: relative;
     bottom: 0px;
+    width: 100%;
   }
   .main_content_box{
     flex-wrap: wrap;
     flex-direction: column;
+    width: 100%;
   }
   .main_content_box .box{
     margin: 5px 0;
+    width: 100%;
   }
 }
 
@@ -676,7 +679,7 @@ footer{
       width: 275px;
     }
     .main-content .social a{
-      padding: 0 8px;
+      padding: 0 10px;
     }
 }
 
@@ -693,6 +696,6 @@ footer{
       width: 210px;
     }
     .main-content .social a{
-    padding: 0 5px;
-}
+    padding: 0 6px;
+  }
 }
