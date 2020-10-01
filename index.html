@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="about_us.css">
 	<link rel="stylesheet" type="text/css" href="slick.css">
 	<link rel="stylesheet" type="text/css" href="image.css">
+	<link rel="stylesheet" type="text/css" href="modal.css">
 	<script type="text/javascript" src="jquery/jquery.js"></script>
 </head>
 <body>
@@ -24,10 +25,64 @@
 	    <div id="ud_bg_left" class="ud_pre_half"></div>
 	    <div id="ud_bg_right" class="ud_pre_half"></div>
 	</section>
+
+
+	<button id="myBtn" style="display: none;">Add</button>
+		<!-- modal box start -->
+			<div id="myModal" class="modal">
+  				<!-- Modal content -->
+					<div class="modal-content">
+				  	<h1 class="heading">Offer </h1>
+				    <span class="close">&times;</span>
+
+				    <div class="modal_main_body">
+				    	<div class="product_offer_img">
+				    		<img src="images/product/flyashbrick.jpg">
+				    		<h1>Flyash Brick Panel</h1>
+				    	</div>
+				    	<div class="offer_content">
+				    		<h1>Description</h1>
+				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				    		<div class="offer_price_row">
+				    			<div class="offer_column">
+				    				<h3>Actual Price</h3>
+				    				<h1>100000<span>/-</span></h1>
+				    			</div>
+				    			<div class="offer_column">
+				    				<h3>Offer Price</h3>
+				    				<h1>100000<span>/-</span></h1>
+				    			</div>
+				    		</div>
+				    		<button class="product_show_btn">Go check Out</button>
+				    		<div class="contact">
+				    			<h1>Contact Us</h1>
+				    			<div class="contact_details">
+					    			<div class="phone">9301001517, 0771-042468</div>
+					    			<div class="email">info@mgautomations.com</div>
+					    		</div>
+				    		</div>
+				    	</div>
+				    </div>	
+
+
+
+				  	</div>
+			</div>
+
+
+
+
 	<header class="btn_container" id="home_btn">
-		<video autoplay loop muted class="video_bg">
+		<div class="back_img">
+		</div>
+		<!-- <video autoplay loop muted class="video_bg">
 			<source src="images/flyash3.mp4" type="video/mp4">
-		</video>
+		</video> -->
 		<nav data-aos="fade-up" data-aos-delay="500"
     				data-aos-duration="500">
 			<img class="logo" src="images/logo2.png">
@@ -58,8 +113,7 @@
 	<div class="description" style="height: 12vh;">
 
 		<div class="content">
-		<!-- <p>Established in the year 2017, MG Automation has made a well-recognized name as a Service Provider of Electrical Panel Maintenance Service, DC Drives Services, Robotic Arm System and much more. We have achieved expertise in catering to the requirements of our clients exactly as per their specifications. We emphasize on stringent quality standards in order to ensure that the products provided to our clients are always optimum to its level. To suit the needs of our valued clients we are offering these services as per their precise requirements.</p> -->
-
+		<p>Established in the year 2017, MG Automation has made a well-recognized name as a Service Provider of Electrical Panel Maintenance Service, DC Drives Services, Robotic Arm System and much more. We have achieved expertise in catering to the requirements of our clients exactly as per their specifications. We emphasize on stringent quality standards in order to ensure that the products provided to our clients are always optimum to its level. To suit the needs of our valued clients we are offering these services as per their precise requirements.</p>
 		</div>
 	</div>
 		<!-- scroll top button starts -->
@@ -79,7 +133,7 @@
 			        </div>
 					<div class="back-face">
 			          	<span>Factory Automation</span>
-			          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.</p>
+			          <p>Factory automation, or industrial automation, is the connecting up of factory equipment to improve the efficiency and reliability of process control systems. This in turn leads to lower costs, improved quality, increased flexibility and less environmental impact.</p>
 					</div>
 				</div>
 				<div class="box" data-aos="fade-down" data-aos-delay="200"data-aos-duration="800" data-aos-offset="200">
@@ -91,7 +145,7 @@
 			        </div>
 					<div class="back-face">
 			          <span>Process Automation</span>
-			          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.</p>
+			          <p>Process automation refers to the use of digital technology to perform a process or processes in order to accomplish a workflow or function. The term “business process automation” is also used to describe digital process automation.</p>
 					</div>
 				</div>
 				<div class="box" data-aos="flip-down" data-aos-delay="400"data-aos-duration="1000" data-aos-offset="200">
@@ -103,7 +157,7 @@
 	        		</div>
 					<div class="back-face">
 	          			<span>Manufacturing Executive System</span>
-	          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.</p>
+	          		<p>A manufacturing execution system is a system that connects and monitors machines and work centers on the factory floor. The main goal of an MES is to ensure effective execution of manufacturing operations and improve production efficiency.</p>
 					</div>
 				</div>
 
@@ -116,7 +170,7 @@
 			        </div>
 					<div class="back-face">
 			          	<span>Robotic Process Automation(RPA)</span>
-			          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.</p>
+			          <p>Robotic Process Automation is the technology that allows anyone today to configure  a “robot” to emulate and integrate the actions of a human interacting within digital systems to execute a business process. RPA robots utilize the user interface to capture data.</p>
 					</div>
 				</div>
 				<div class="box" data-aos="flip-down" data-aos-delay="200"data-aos-duration="800" data-aos-offset="200">
@@ -128,7 +182,7 @@
 			        </div>
 					<div class="back-face">
 			          <span>Control System</span>
-			          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.</p>
+			          <p>A control system manages, commands, directs, or regulates the behavior of other devices or systems using control loops. It can range from a single home heating controller using a thermostat controlling a domestic boiler to large Industrial control systems which are used for controlling processes or machines.</p>
 					</div>
 				</div>
 				<div class="box" data-aos="fade-up" data-aos-delay="400"data-aos-duration="1000" data-aos-offset="200">
@@ -140,7 +194,7 @@
 	        		</div>
 					<div class="back-face">
 	          			<span>Batch Automation</span>
-	          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.</p>
+	          		<p>batch processing is the process by which a computer completes batches of jobs, often simultaneously, in non-stop, sequential order. This command goes by many names, including Workload Automation (WLA) and Job Scheduling.</p>
 					</div>
 				</div>
 			</div>
@@ -151,28 +205,28 @@
 				      <div class="card" data-aos="fade-up" data-aos-delay="500"data-aos-duration="1000">
 					        <div class="card-header">
 					        	<img src="images/trophy.png" style="width: 80px;">
-								<h1><span class="counter">7831</span><span> +</span></h1>
+								<h1><span class="counter">75</span><span> +</span></h1>
 					        	<h3>Times Awarded</h3>
 					        </div>
 				      </div>
 				      <div class="card" data-aos="fade-up" data-aos-delay="500"data-aos-duration="1000">
 					        <div class="card-header">
 					        	<img src="images/project.png" style="width: 80px;">
-					        	<h1><span class="counter">687</span><span> +</span></h1>
+					        	<h1><span class="counter">250</span><span> +</span></h1>
 					        	<h3>Project Completed</h3>
 					        </div>
 				      </div>
 				      <div class="card" data-aos="fade-up" data-aos-delay="500"data-aos-duration="1000">
 					        <div class="card-header">
 					        	<img src="images/happiness.png" style="width: 80px;">
-					        	<h1><span class="counter">250</span><span> +</span></h1>
+					        	<h1><span class="counter">15</span><span> +</span></h1>
 					        	<h3>Happy Clients</h3>
 					        </div>
 				      </div>
 				      <div class="card" data-aos="fade-up" data-aos-delay="500"data-aos-duration="1000">
 				        <div class="card-header">
 					        	<img src="images/city.png" style="width: 80px;">
-					        	<h1><span class="counter">12</span><span> +</span></h1>
+					        	<h1><span class="counter">85</span><span> +</span></h1>
 					        	<h3>Worked in Cities</h3>
 					        </div>
 				      </div>
@@ -244,9 +298,24 @@
   			<h2>Our  Clients</h2>
 	   		<section class="customer-logos slider">
 		      <div class="slide">
-		        <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+		        <img src="images/clients_logo/ludiyana.jpg">
 		      </div>
 		      <div class="slide">
+		        <img src="images/clients_logo/ayush_engineering.png">
+		      </div>
+		      <div class="slide">
+		        <img src="images/clients_logo/bikram_hydraulics.png">
+		      </div>
+		      <!-- <div class="slide">
+		        <img src="images/clients_logo/ludiyana.jpg">
+		      </div>
+		      <div class="slide">
+		        <img src="images/clients_logo/ludiyana.jpg">
+		      </div>
+		      <div class="slide">
+		        <img src="images/clients_logo/ludiyana.jpg">
+		      </div> -->
+<!-- 		      <div class="slide">
 		        <img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg">
 		      </div>
 		      <div class="slide">
@@ -266,7 +335,7 @@
 		      </div>
 		      <div class="slide">
 		        <img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
-		      </div>
+		      </div> -->
 		   </section>
 		</div>
 	</section>
@@ -314,7 +383,7 @@
 				      <div class="card_work" data-aos="fade-up" data-aos-delay="500"data-aos-duration="1000">
 					        <div class="card-header_work">
 					        	<img src="images/delivery.png" style="width: 80px;">
-								<h1>Deliever</h1>
+								<h1>Deliver</h1>
 								<p style="color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 					        </div>
@@ -543,6 +612,9 @@
 						<input type="text" placeholder="Email" name="">
 					</div>
 					<div class="input_box">
+						<input type="number" placeholder="Mobile Number" name="">
+					</div>
+					<div class="input_box">
 						<textarea  placeholder="message"></textarea>
 					</div>
 					<div class="input_box">
@@ -563,12 +635,7 @@
             <div class="left box">
               <h2>MG Automation</h2>
               <div class="content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Established in the year 2017, MG Automation has made a well-recognized name as a Service Provider of Electrical Panel Maintenance Service, DC Drives Services, Robotic Arm System and much more. We have achieved expertise in catering to the requirements of our clients exactly as per their specifications. We emphasize on stringent quality standards in order to ensure that the products provided to our clients are always optimum to its level. To suit the needs of our valued clients we are offering these services as per their precise requirements.</p>
               </div>
             </div>
             <div class="center box">
@@ -598,10 +665,11 @@
         <div class="box_under_line"><h1 class="under_line"></h1></div>
         
         <div class="social">
-                    <a href="#"><span class="fa fa-facebook-f"></span></a>
-                    <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-instagram"></span></a>
-                    <a href="#"><span class="fa fa-youtube"></span></a>
+                    <a target="_blank" href="https://www.facebook.com/M-G-Automation-100205364933600/"><span class="fa fa-facebook-f"></span></a>
+                    <a target="_blank" href="https://twitter.com/MGAutomation1?s=09"><span class="fa fa-twitter"></span></a>
+                    <a target="_blank" href="https://instagram.com/mgautomation?igshid=2fsuhsib85ai"><span class="fa fa-instagram"></span></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UC_aKDJkKu8pJcXweiREIHBw/featured"><span class="fa fa-youtube"></span></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/m-g-automation"><span class="fa fa-linkedin-square" aria-hidden="true"></span></a>
         </div>
       </div>
 	</footer>
@@ -612,6 +680,21 @@
 	<script src="jquery/waypoint.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
+
+  // 	$(document).ready(function(){
+		// 	setTimeout(openWindow,2000);
+		// 	$('.close').click(function(){
+		// 		$('.modal').hide();
+		// 		$('html body').css("overflow", "scroll");	
+		// 	});
+		// });
+  // 	function openWindow(){
+		// 	$('.modal').show();
+		// 	$('html body').css("overflow", "hidden");
+		// }
+
+
+
     AOS.init({
     	disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
