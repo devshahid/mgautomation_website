@@ -433,6 +433,7 @@ footer{
   width: 100%;
 }
 .main_content_box .box{
+  width: 100%;
   flex-basis: 50%;
   padding: 10px 20px;
 }
@@ -465,6 +466,7 @@ footer{
 .left .content p{
   text-align: justify;
   color: #fff;
+
 }
 .box_under_line{
   margin-top: 20px;
@@ -673,6 +675,9 @@ footer{
    .wrapper .box{
       width: 275px;
     }
+    .main-content .social a{
+      padding: 0 10px;
+    }
 }
 
 @media (max-width: 320px){
@@ -687,4 +692,7 @@ footer{
    .wrapper .box{
       width: 210px;
     }
+    .main-content .social a{
+    padding: 0 6px;
+}
 }
