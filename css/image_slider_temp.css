@@ -71,6 +71,11 @@
         height: auto;
         /*height: 450px;*/
     }
+    .thumbnail-slider .controls{
+        position: absolute;
+        bottom: 100%;
+    }
+
 
 }
 @media screen and (max-width: 350px) {
